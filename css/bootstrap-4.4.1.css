@@ -549,6 +549,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -10279,4 +10280,71 @@ over_view_icons {
 
 .koko{
   margin-bottom: 45px;
+}
+
+.ooo{
+  margin: 0, auto;
+}
+
+.shared-title{
+  text-align:  center;
+}
+.centerrr{
+  width: 80%;
+  margin: 0 auto;
+}
+
+code-section {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.code-container {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: px;
+  max-width: 800px;
+}
+
+.code-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.code-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 0;
+}
+
+.code-table {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.code-snippet {
+  background-color: #f1f1f1;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.youtube-embed{
+  width: 50vw;
+  height: 50vh;
+  margin: auto; 
 }
