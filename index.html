@@ -98,22 +98,25 @@
     </div>
   </section>
 
+  <section class="youtube-embed">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0hf3qP-Lvbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
 
   <!-- abstract -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
+          <hr style="margin-top:0px">
           <h3>Abstract</h3>
-            <hr style="margin-top:0px">
             <h6 style="color:#8899a5" class="text-center"> 
-              <!-- TL;DR:  Large and diverse dataset that that contain street-level images with accurate poses and aerial images images. Designed for street level to aerial visual localization.  -->
               TL;DR; Dual-View Drone video dataset with videos recorded from different perspectives. Rural and urban pastures from an European geographic.
             </h6>
-              <br>
-            <video id="demo" width="75%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <!-- <br> -->
+            <!-- <video id="demo" width="75%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
                   <source src="src/Cortex_Park_crossroads1.mp4" type="video/mp4">
-            </video>
+            </video> -->
 
             <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
               <br>
@@ -133,8 +136,6 @@
   <br>
 
   <!-- Class Distribution  -->
-
-    <br>
 
     <!-- Examples Samples -->
   <!-- <section>
@@ -168,7 +169,57 @@
                 
               </td>
           </tr>
-      </table>
+        </table>
+      </div>
+      <hr style="margin-top:0px; width: 60%">
+  </section>
+  
+  <br>
+  <section >
+      <div class="code-container">
+        <h1 class="code-title">Annotation Format</h1>
+        <h2 class="code-subtitle">We adopt the MSCOCO Annotation Format. We extend the format with each image having a scene and a frame identifier. We provide id-aligned annotation files for corresponding ground and aerial. </h2>
+        <div class="code-table">
+          <div class="code-snippet">
+            <pre>
+              <code>
+                {
+                  "id": 1,
+                  "file_name": "scene_12_sdu_30Sec_droneView_6_000826.PNG",
+                  "height": 337,
+                  "width": 600.0
+                  "scene": 12,
+                  "frameID": 826,
+                },
+              </code>
+            </pre>
+          </div>
+          <!-- <div class="code-snippet">
+            <pre>
+              <code>
+                // Second code snippet
+                function goodbyeWorld() {
+                  console.log("Goodbye, World!");
+                }
+                goodbyeWorld();
+              </code>
+            </pre>
+          </div> -->
+        </div>
+      </div>
+      <hr style="margin-top:0px; width: 60%">
+  </section>
+
+
+   <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Examples</h3>
+            <h6 style="color:#8899a5" class="text-center"> 
+              <img style="max-width: 60%; height: auto;" src="src/sample_frames_small.png" alt="DVD - Dual-View Drone Dataset Examples"/>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -437,3 +488,5 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </body>
 </html>
+
+
