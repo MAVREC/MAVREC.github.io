@@ -10348,3 +10348,16 @@ code-section {
   height: 50vh;
   margin: auto; 
 }
+
+.container-side-by-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
+
+.sample-frame-image {
+  flex: 1;
+  max-width: 30%;
+  height: auto;
+}
