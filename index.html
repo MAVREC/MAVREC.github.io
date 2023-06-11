@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dual-View Drone video dataset with videos recorded from different perspectives. Rural and urban pastures from an European geographic."/>
+    <meta name="description" content="Dual-View Drone video dataset with videos recorded from different perspectives. Rural and urban pastures from European geographies."/>
     <title>DVD - Dual-View Drone Dataset </title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
@@ -21,13 +21,15 @@
     </style>
   </head>
 
+
+
   <!-- cover -->
   <section>
     <div class="jumbotron text-center mt-0">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Dual-View Drone Dataset (DVD)</h2> 
+            <h2>Dual-View Drone (DVD) Dataset:</h2> 
             <!-- <h3>DVD</h3>  -->
             <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
             <!-- <h4 style="color:#6e6e6e;"> submitted NeurIPS 2023 </h4> -->
@@ -66,7 +68,7 @@
               <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
               <i class="fa fa-window-restore over_view_icons" aria-hidden="true"></i>
               <br>
-             12 Multi Modal Scenes 
+             12 Multi-modal Scenes 
               </td>
               <td>
                   <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
@@ -99,31 +101,26 @@
 
   <section class="youtube-embed">
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0hf3qP-Lvbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
     </section>
 
   <!-- abstract -->
   <section>
+    <hr style="margin: 10px;">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <hr style="margin-top:0px">
           <h3>Abstract</h3>
             <h6 style="color:#8899a5" class="text-center"> 
-              TL;DR; Dual-View Drone video dataset with videos recorded from different perspectives. Rural and urban pastures from an European geographic.
+              TL;DR; Dual-View Drone video dataset with synchronized videos recorded from different perspectives covering rural and urban pastures from European geographies.
             </h6>
-              <!-- <br> -->
-            <!-- <video id="demo" width="75%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                  <source src="src/Cortex_Park_crossroads1.mp4" type="video/mp4">
-            </video> -->
-
             <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
-              <br>
-              <br>
+              
           <p class="text-justify">
             Object detection from aerial images are essential in many applications, such as self-driving cars, robotics, surveillance, to mention a few.~Despite commercial abundance of unmanned aerial vehicles (UAVs), aerial data acquisition remains challenging due to UAV-flight regulations, atmospheric turbulence, sensor failure, etc. Additionally, the color content of the scenes, solar-zenith angle, and population density of different geographies are latitude-dependent, and influence the diversity of the collected data and generalization capacity of the deep neural network (DNN) models trained on it. The existing drone datasets collected primarily in the urban pasture of Asia and North America, do not exhaustively represent different geographies.  
           </p>
           <p class="text-justify">
-            In this work, we present Dual View Drone or DVD, a video dataset where synchronized scenes are recorded from different perspectives --- ground camera and drone-mounted camera. DVD consists of around 2.5 hours of industry-standard 2.7K resolution video sequences, more than 0.5 million frames, and 1.1 million annotated bounding boxes, covering rural and urban pastures during spring and summer in high-latitude European geographies.~This makes DVD the largest ground and aerial-view dataset, and the second largest among all drone-based datasets across all modalities and tasks. Additionally, we recognize that annotating raw videos is a resource-heavy task. Therefore, while benchmarking, we focus on both supervised and semi-supervised object detection baselines that can distill knowledge from multiple views and learn collaboratively. We release the DVD dataset for research us
+            In this work, we present Dual View Drone or DVD, a video dataset where synchronized scenes are recorded from different perspectives --- ground camera and drone-mounted camera. DVD consists of around 2.5 hours of industry-standard 2.7K resolution video sequences, more than 0.5 million frames, and 1.1 million annotated bounding boxes, covering rural and urban pastures during spring and summer in high-latitude European geographies.~This makes DVD the largest ground and aerial-view dataset, and the second largest among all drone-based datasets across all modalities and tasks. Additionally, we recognize that annotating raw videos is a resource-heavy task. Therefore, while benchmarking, we focus on both supervised and semi-supervised object detection baselines that can distill knowledge from multiple views and learn collaboratively.
           </p>
         </div>
         <hr style="margin-top:0px">
@@ -134,7 +131,26 @@
   <br>
 
   <section>
-    <h3 class="shared-title">10 object Classes</h3>
+    <h3 class="shared-title">Sample Frames</h3>
+    <h6 style="color:#8899a5" class="text-center"> 
+    <div class="container-side-by-side">
+      <img src="src/sample_frames_small.png" class="sample-frame-image" alt="Image 1">
+      <img src="src/different_scenes_extra.png" class="sample-frame-image" alt="Image 2">
+    </div>
+    <div style="margin: 10px auto; width: 60%;">
+      <p class="text-center;">Different sample scenes (with annotation) from our dataset; the first row is the aerial-view, second
+        row presents the same scenes from a ground camera. Similarly, the third row is the aerial-view, and the fourth
+        row presents the same scenes from a ground camera. Some scenes have a dense
+        object annotations, while some scenes have very few object annotations. This high variance in object
+        distribution across different scenes in DVD is complementary to datasets like VisDrone where object
+        detection is relatively straightforward due to their biased object distribution (dense), reflecting its
+        demographic characteristics.</p>
+    </div>
+      <hr style="margin-top:0px; width: 60%">
+  </section>
+
+  <section>
+    <h3 class="shared-title">10 Object Classes</h3>
     <div class="container">
       <table>
           <tr>
@@ -153,15 +169,16 @@
           </tr>
         </table>
       </div>
-      <hr style="margin-top:0px; width: 60%">
+      <hr style="margin-top:20px; width: 60%">
   </section>
   
+
    <!-- Color Dominans  -->
    <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Color Dominans in Different Datasets</h3>
+          <h3>Dominant colors in DVD and other datasets</h3>
             <h6 style="color:#8899a5" class="text-center"> 
                 <p class="text-justify; text-align: center; margin-top:10px;">
                     Color dominans in different scenes of DVD
@@ -179,19 +196,6 @@
   </section>
 
 
-  <!-- Qualitative Results -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Qualitative Results</h3>
-            <h6 style="color:#8899a5" class="text-center"> 
-              <img style="max-width: 60%; height: auto;" src="src/qualitative_results.png" alt="DVD - Dual-View Drone Dataset Qualitative Results"/>
-        </div>
-      </div>
-    </div>
-    <hr style="margin-top:0px; width: 60%">
-  </section>
 
 
   <br>
@@ -232,20 +236,21 @@
       <hr style="margin-top:20px; width: 60%">
   </section>
 
-
-
-   <section>
+  <!-- Qualitative Results -->
+  <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Ground Truth Examples</h3>
+          <h3>Qualitative Results</h3>
             <h6 style="color:#8899a5" class="text-center"> 
-              <img style="max-width: 60%; height: auto;" src="src/sample_frames_small.png" alt="DVD - Dual-View Drone Dataset Examples"/>
+              <img style="max-width: 60%; height: auto;" src="src/qualitative_results.png" alt="DVD - Dual-View Drone Dataset Qualitative Results"/>
         </div>
       </div>
     </div>
+    <!-- <hr style="margin-top:0px; width: 60%"> -->
   </section>
 
+ 
   <!-- demo video -->
   <!-- <section>
     <div class="container">
