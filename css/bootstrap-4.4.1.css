@@ -10346,7 +10346,7 @@ code-section {
 .youtube-embed{
   width: 50vw;
   height: 50vh;
-  margin: 10px; 
+  margin: auto; 
 }
 
 .container-side-by-side{
