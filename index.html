@@ -24,17 +24,28 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-bottom: 2rem;
         }
-        .btn-light {
-            background-color: #f8f9fa;
-            border: none;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .btn {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            border: none; /* No border */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional */
             transition: background-color 0.3s ease;
+            margin-bottom: 1rem; /* Spacing */
         }
-        .btn-light:hover {
-            background-color: #e2e6ea;
+        .btn:hover {
+            background-color: #333; /* Darker on hover */
+        }
+        .btn i {
+            color: #fff; /* White icon */
         }
         h2, h3, h4, .fa {
             color: #333;
+        }
+        h4 {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+            font-weight: normal;
         }
         table {
             width: 100%;
@@ -68,20 +79,21 @@
                 <div class="col">
                     <h2>Multiview Aerial Visual Recognition (MAVREC):</h2>
                     <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
-                    <h4>by Aritra Dutta, Srijan Das, Jacob Nielsen, Rajatsubhra Chakraborty, and Mubarak Shah</h4>
+                    <h4 style="font-size: smaller;"> Aritra Dutta<sup>1</sup>, Srijan Das<sup>2</sup>, Jacob Nielsen<sup>3</sup>, Rajatsubhra Chakraborty<sup>2</sup>, and Mubarak Shah<sup>1</sup></h4>
+                    <p style="font-size: smaller;">1 University of Central Florida, 2 University of North Carolina at Charlotte, 3 University of Southern Denmark</p>
                     <hr>
                     <div class="row justify-content-center">
                         <div class="column">
-                            <p class="mb-5"><a class="btn btn-large btn-light" href="src/MAVRec_CVPR2024-12-1-13.pdf" role="button" target="_blank"><i class="fa fa-file"></i> Paper</a></p>
+                            <p><a class="btn btn-large" href="src/MAVRec_CVPR2024-12-1-13.pdf" role="button" target="_blank"><i class="fa fa-file"></i> Paper</a></p>
                         </div>
                         <div class="column">
-                            <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://drive.google.com/drive/folders/1X7M2EpYpBMA09j-TF8S5mrwTNBGnKhFd?usp=share_link" role="button" target="_blank" disabled><i class="fa fa-database" aria-hidden="true"></i> Data</a></p>
+                            <p><a class="btn btn-large" id="code_soon" href="https://drive.google.com/drive/folders/1X7M2EpYpBMA09j-TF8S5mrwTNBGnKhFd?usp=share_link" role="button" target="_blank"><i class="fa fa-database" aria-hidden="true"></i> Data</a></p>
                         </div>
                         <div class="column">
-                            <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/DVD-dataset/dvdv1-code" role="button" target="_blank"><i class="fa fa-file"></i> Code</a></p>
+                            <p><a class="btn btn-large" href="https://github.com/DVD-dataset/dvdv1-code" role="button" target="_blank"><i class="fa fa-file-code-o"></i> Code</a></p>
                         </div>
                         <div class="column">
-                            <p class="mb-5"><a class="btn btn-large btn-light" href="src/MAVRec_CVPR2024-12-14-23.pdf" role="button" target="_blank"><i class="fa fa-file"></i> Supplementary</a></p>
+                            <p><a class="btn btn-large" href="src/MAVRec_CVPR2024-12-14-23.pdf" role="button" target="_blank"><i class="fa fa-file-text"></i> Supplementary</a></p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +106,7 @@
     <br>
     <div class="container">
         <div class="row">
-            < <div class="col-12 text-center">
+            <div class="col-12 text-center">
                 <h6 style="color:#8899a5" class="text-center"> 
                     TL;DR; MAVREC- Multiview Aerial Visual RECognition dataset with synchronized videos recorded from different perspectives covering rural and urban pastures from European geographies.
                 </h6>
@@ -103,6 +115,8 @@
         </div>
     </div>
 </section>
+
+
     
 <!-- Highlight Table -->
 <section>
