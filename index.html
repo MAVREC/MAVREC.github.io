@@ -1,177 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="width=device-width, initial-scale=1">
     <meta name="description" content="MAVREC- Multiview Aerial Visual RECognition dataset with videos recorded from different perspectives. Rural and urban pastures from European geographies."/>
-    <title>MAVREC- Multiview Aerial Visual RECognition dataset</title>
+    <title>MAVREC- Multiview Aerial Visual RECognition dataset </title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            background: linear-gradient(to right, #fdfcf9, #e2d1c3);
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
-        }
-        .jumbotron {
-            background-color: #fff;
-            padding: 2rem 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        .btn {
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
-            border: none; /* No border */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional */
-            transition: background-color 0.3s ease;
-            margin-bottom: 1rem; /* Spacing */
-        }
-        .btn:hover {
-            background-color: #333; /* Darker on hover */
-        }
-        .btn i {
-            color: #fff; /* White icon */
-        }
-        h2, h3, h4, .fa {
-            color: #333;
-        }
-        h4 {
-            font-size: 1rem;
-            color: #555;
-            margin-top: 10px;
-            font-weight: normal;
-        }
-        table {
-            width: 100%;
-            margin-top: 20px;
-        }
-        td {
-            text-align: center;
-            padding: 15px;
-        }
-        .shared-title {
-            color: #fd5638;
-        }
-        section {
-            padding: 20px 0;
-        }
-        hr {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border: 0;
-            border-top: 1px solid #eee;
-        }
+      body {
+        background: #fdfcf9 no-repeat fixed top left;
+        font-family:'Open Sans', sans-serif;
+      }
     </style>
-</head>
-<body>
+  </head>
 
-<!-- Cover -->
-<section>
+
+
+  <!-- cover -->
+  <section>
     <div class="jumbotron text-center mt-0">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Multiview Aerial Visual Recognition (MAVREC):</h2>
-                    <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
-                    <h4 style="font-size: smaller;"> Aritra Dutta<sup>1</sup>, Srijan Das<sup>2</sup>, Jacob Nielsen<sup>3</sup>, Rajatsubhra Chakraborty<sup>2</sup>, and Mubarak Shah<sup>1</sup></h4>
-                    <p style="font-size: smaller;">1 University of Central Florida, 2 University of North Carolina at Charlotte, 3 University of Southern Denmark</p>
-                    <hr>
-                    <div class="row justify-content-center">
-                        <div class="column">
-                            <p><a class="btn btn-large" href="src/MAVRec_CVPR2024-12-1-13.pdf" role="button" target="_blank"><i class="fa fa-file"></i> Paper</a></p>
-                        </div>
-                        <div class="column">
-                            <p><a class="btn btn-large" id="code_soon" href="https://drive.google.com/drive/folders/1X7M2EpYpBMA09j-TF8S5mrwTNBGnKhFd?usp=share_link" role="button" target="_blank"><i class="fa fa-database" aria-hidden="true"></i> Data</a></p>
-                        </div>
-                        <div class="column">
-                            <p><a class="btn btn-large" href="https://github.com/DVD-dataset/dvdv1-code" role="button" target="_blank"><i class="fa fa-file-code-o"></i> Code</a></p>
-                        </div>
-                        <div class="column">
-                            <p><a class="btn btn-large" href="src/MAVRec_CVPR2024-12-14-23.pdf" role="button" target="_blank"><i class="fa fa-file-text"></i> Supplementary</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Multiview Aerial Visual Recognition (MAVREC):</h2> 
+            <!-- <h3>DVD</h3>  -->
+            <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
+             <h4 style="font-size: smaller;">by Aritra Dutta<sup>1</sup>, Srijan Das<sup>2</sup>, Jacob Nielsen<sup>3</sup>, Rajatsubhra Chakraborty<sup>2</sup>, and Mubarak Shah<sup>1</sup></h4>
+            <p style="font-size: smaller;">1 University of Central Florida, 2 University of North Carolina at Charlotte, 3 University of Southern Denmark</p>
+            <hr>
+            <!-- <h4 style="color:#6e6e6e;"> submitted NeurIPS 2023 </h4> -->
+            <hr>
+            <!-- author thing here -->
 
-<section>
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="src/MAVRec_CVPR2024-12-1-13.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://drive.google.com/drive/folders/1X7M2EpYpBMA09j-TF8S5mrwTNBGnKhFd?usp=share_link" role="button" 
+                    target="_blank" disabled=1>
+                <!-- <i class="fa fa-github-alt"></i> Data </a> </p> -->
+                <i class="fa fa-database" aria-hidden="true"></i> Data </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/DVD-dataset/dvdv1-code" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="src/MAVRec_CVPR2024-12-14-23.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Supplementary</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <br>
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h6 style="color:#8899a5" class="text-center"> 
-                    TL;DR; MAVREC- Multiview Aerial Visual RECognition dataset with synchronized videos recorded from different perspectives covering rural and urban pastures from European geographies.
-                </h6>
-                <p style="color:#8899a5; font-weight:bold;" class="text-center">🎉 <strong>MAVREC got accepted in CVPR 2024</strong> 🎉</p>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center">
+        <h6 style="color:#8899a5" class="text-center"> 
+              TL;DR; MAVREC- Multiview Aerial Visual RECognition dataset with synchronized videos recorded from different perspectives covering rural and urban pastures from European geographies.
+            </h6>
+           <p style="color:#8899a5; font-weight:bold;" class="text-center">🎉 <strong>MAVREC got accepted in CVPR 2024</strong> 🎉</p>
+
+            <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
         </div>
+      </div>
     </div>
-</section>
-
-
+  </section>
     
-<!-- Highlight Table -->
-<section>
+    
+  <!-- Higlight Table -->
+  <section>
     <div class="container">
-        <table>
-            <tr>
-                <td>
-                    <i class="fa fa-window-restore over_view_icons" aria-hidden="true"></i><br>
-                    12 Multi-modal Scenes 
-                </td>
-                <td>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i><br>
-                    0.5M Frames
-                </td>
-                <td>
-                    <i class="fa fa-th-large" aria-hidden="true"></i><br>
-                    1.1M Bounding Boxes
-                </td>
-                <td>
-                    <i class="fa fa-cube" aria-hidden="true"></i><br>
-                    10 Object Classes
-                </td>
-                <td>
-                    <i class="fa fa-file-video-o" aria-hidden="true"></i><br>
-                    2.5 hours of 2.7K resolution video
-                </td>
-            </tr>
-        </table>
+      <table>
+          <tr>
+            <td>
+              <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+              <i class="fa fa-window-restore over_view_icons" aria-hidden="true"></i>
+              <br>
+             12 Multi-modal Scenes 
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+                  <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  <br>
+                  0.5M Frames
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon2.png" alt="Icon 2"> -->
+                  <i class="fa fa-th-large" aria-hidden="true"></i>
+                  <br>
+                  1.1M Bounding Boxes
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon3.png" alt="Icon 3"> -->
+                  <i class="fa fa-cube" aria-hidden="true"></i>
+                  <br>
+                 10 Object Classes
+              </td>
+              <td>
+                <!-- <img src="https://example.com/icon4.png" alt="Icon 4"> -->
+                <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                <br>
+                2.5 hours of 2.7K resolution video
+            </td>
+          </tr>
+      </table>
     </div>
-</section>
+  </section>
 
-<section class="youtube-embed">
+  <section class="youtube-embed">
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0hf3qP-Lvbg?autoplay=1&mute=1&loop=1&playlist=0hf3qP-Lvbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
-<!-- Abstract -->
-<section style="margin-top: 20px">
+ 
+
+  <!-- abstract -->
+  <section style="margin-top: 20px">
     <br>
     <hr style="margin: 10px;">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Abstract</h3>
-                <p class="text-justify">
-                    Despite the commercial abundance of UAVs, aerial data acquisition remains challenging, and the existing Asia and North America-centric open-source UAV datasets are small-scale or low-resolution and lack diversity in scene contextuality. Additionally, the color content of the scenes, solar-zenith angle, and population density of different geographies influence the data diversity. These two factors conjointly render suboptimal aerial-visual perception of the deep neural network (DNN) models trained primarily on the ground-view data, including the open-world foundational models.
-                </p>
-                <p class="text-justify">
-                    To pave the way for a transformative era of aerial detection, we present Multiview Aerial Visual RECognition or MAVREC, a video dataset where we record synchronized scenes from different perspectives --- ground camera and drone-mounted camera. MAVREC consists of around 2.5 hours of industry-standard 2.7K resolution video sequences, more than 0.5 million frames, and 1.1 million annotated bounding boxes. Through our extensive benchmarking on MAVREC, we recognize that augmenting object detectors with ground-view images from the corresponding geographical location is a superior pre-training strategy for aerial detection. Building on this strategy, we benchmark MAVREC with a curriculum-based semi-supervised object detection approach that leverages labeled (ground and aerial) and unlabeled (only aerial) images to enhance the aerial detection.
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+           
+          <p class="text-justify">
+              Despite the commercial abundance of UAVs, aerial data acquisition remains challenging, and the existing Asia and North America-centric open-source UAV datasets are small-scale or low-resolution and lack diversity in scene contextuality. Additionally, the color content of the scenes, solar-zenith angle, and population density of different geographies influence the data diversity. These two factors conjointly render suboptimal aerial-visual perception of the deep neural network (DNN) models trained primarily on the ground-view data, including the open-world foundational models. 
+          </p>
+          <p class="text-justify">
+            To pave the way for a transformative era of aerial detection, we present Multiview Aerial Visual RECognition or MAVREC, a video dataset where we record synchronized scenes from different perspectives --- ground camera and drone-mounted camera. MAVREC consists of around 2.5 hours of industry-standard 2.7K resolution video sequences, more than 0.5 million frames, and 1.1 million annotated bounding boxes.~This makes MAVREC the largest ground and aerial-view dataset, and the fourth largest among all drone-based datasets across all modalities and tasks.~Through our extensive benchmarking on MAVEREC, we recognize that augmenting object detectors with ground-view images from the corresponding geographical location is a superior pre-training strategy for aerial detection. Building on this strategy, we benchmark MAVREC with a curriculum-based semi-supervised object detection approach that leverages labeled (ground and aerial) and unlabeled (only aerial) images to enhance the aerial detection.
+          </p>
+    
         </div>
+        <hr style="margin-top:0px">
+      </div>
     </div>
-</section>
-
-
+  </section>
 
 
   <section>
@@ -341,6 +319,10 @@
       </div>
     </div>
   </section>
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
  
   <!-- demo video -->
   <!-- <section>
@@ -552,11 +534,6 @@
       </div>
     </div>
   </div> -->
-
-  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
-      <hr>
-      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
-  </footer>
 
   <script type="text/javascript">
     function changePlaybackSpeed(speed)
